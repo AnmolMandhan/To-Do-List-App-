@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+}
+
+.todo-app {
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.todo-app h1 {
+  text-align: center;
+  color: #333;
+}
+
+.input-section {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.input-section input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.input-section button {
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.input-section button:hover {
+  background-color: #cc0000;
+}
