@@ -1,1 +1,151 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  max-width: 700px;
+  margin: auto;
+  padding: 30px;
+  background: white;
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: background 0.3s, color 0.3s;
+}
+
+.app.dark {
+  background: #1e1e1e;
+  color: #eee;
+}
+
+h1 {
+  text-align: center;
+  color: #e53935;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-group input[type="text"],
+.input-group select,
+.input-group input[type="date"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-group-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.input-group button {
+  padding: 10px;
+  background: #e53935;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.input-group button:hover {
+  background: #c62828;
+}
+
+.theme-toggle {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.task-list li {
+  background: #f8f8f8;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.3s;
+}
+
+.app.dark .task-list li {
+  background: #333;
+  border-color: #555;
+}
+
+.task-list li.done {
+  text-decoration: line-through;
+  background: #dcedc8;
+  border-left: 5px solid #388e3c;
+}
+
+.actions button {
+  margin-left: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.priority {
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 3px;
+  color: white;
+}
+
+.priority.high {
+  background: #d32f2f;
+}
+.priority.medium {
+  background: #fbc02d;
+  color: black;
+}
+.priority.low {
+  background: #388e3c;
+}
+
+.filter-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.filter-buttons button {
+  margin: 0 6px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background: white;
+  color: #333;
+  transition: 0.3s;
+}
+
+.filter-buttons button.active,
+.filter-buttons button:hover {
+  background: #e53935;
+  color: white;
+  border-color: #e53935;
+}
+
+.app.dark .filter-buttons button {
+  background: #333;
+  color: white;
+  border-color: #666;
+}
+
+.app.dark .filter-buttons button.active,
+.app.dark .filter-buttons button:hover {
+  background: #e53935;
+  border-color: #e53935;
+}
 
